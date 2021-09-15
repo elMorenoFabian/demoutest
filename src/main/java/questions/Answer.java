@@ -17,9 +17,9 @@ public class Answer implements Question<Boolean> {
     @Override
     public Boolean answeredBy(Actor actor) {
         boolean result;
-        String nameCourse = Text.of(RegisterUserFormFill.HEADER_TITLE_PAGE).viewedBy(actor).asString();
+        String titlePage = Text.of(RegisterUserFormFill.HEADER_TITLE_PAGE).viewedBy(actor).asString();
 
-        if (question.equals(nameCourse)){
+        if (question.equals(titlePage)){
             result = true;
         } else {
             result = false;
